@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .chat-bubble {
+    @apply max-w-xs lg:max-w-md px-4 py-3 rounded-2xl shadow-lg;
+  }
+  
+  .user-bubble {
+    @apply bg-love-pink text-white ml-auto;
+  }
+  
+  .ai-bubble {
+    @apply bg-white text-gray-800 border border-love-lavender;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-love-rose to-love-purple bg-clip-text text-transparent;
+  }
+  
+  .love-button {
+    @apply bg-gradient-to-r from-love-pink to-love-rose hover:from-love-rose hover:to-love-purple text-white font-medium py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+} 
